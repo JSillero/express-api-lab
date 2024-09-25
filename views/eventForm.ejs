@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event form</title>
+</head>
+<body>
+    <%- include('./partials/header') %>
+
+    <form action="/createEvent" method="POST">
+        <label for="">Name:
+            <input type="text" name="name" id="name">
+        </label>
+        <label for="">Location:
+            <input type="text" name="location" id="location">
+        </label>
+        <label>Type:
+            <select name="type" id="type">
+                <option value="film">Film</option>
+                <option value="sport">Sport</option>
+                <option value="music">Music</option>
+            </select>
+        </label>
+        
+        <input type="submit" value="Create Event">
+    </form>
+    
+</body>
+</html>
